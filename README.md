@@ -1,6 +1,6 @@
 # demoDropInDeploy
 
-Creates a basic Checkout page for the User to enter their payment information using the Adyen Web Dropin. 
+Creates a basic Checkout page for the user to enter their payment information using the Adyen Web Dropin. 
 
 ## Description
 This project uses NodeJS to perform the backend server calls to Adyens Payments platform. The front end is a very basic HTML page that renders Adyens Dropin using a <script> tag  
@@ -15,7 +15,7 @@ NodeJS version 10
 
 ### Dependencies
 
-Node Depedencies located in the [package.json](https://github.com/syasu916/demoDropInDeploy/blob/main/package.json)
+Node Dependencies located in the [package.json](https://github.com/syasu916/demoDropInDeploy/blob/main/package.json)
 * dotenv
 * express
 * morgan
