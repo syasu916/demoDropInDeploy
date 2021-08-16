@@ -41,6 +41,13 @@ Once your server has started, http://localhost:3000/
 > node server.js
 Server running on Port 3000
 ```
+If your page does not load, please check the server log. If the error message appears update the the [config.env](https://github.com/syasu916/demoDropInDeploy/blob/main/config.env) with you [Adyen API Credentials](https://docs.adyen.com/development-resources/api-credentials#new-credential)
+```
+  { status: 401,
+  errorCode: '000',
+  message: 'HTTP Status Response - Unauthorized',
+  errorType: 'security' }
+```
 ## Version History
 
 * 0.1
