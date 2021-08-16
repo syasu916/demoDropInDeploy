@@ -10,9 +10,9 @@ var defaultPaymentMethod={"countryCode": "NL",
 */
 async function getConfig() {
   //call paymentMethods to get the api response from '/paymentMethods'
-  const paymentMethodsResponse = await getPaymentMethodsAsync('http://localhost:3002/api/paymentMethods', defaultPaymentMethod);
+  const paymentMethodsResponse = await getPaymentMethodsAsync('api/paymentMethods', defaultPaymentMethod);
   //GET the AYDEN_CLIENT_KEY from the config.env file 
-  const clientKey = await getClientKey('http://localhost:3002/api/config');
+  const clientKey = await getClientKey('api/config');
  
   var configuration =  {
     paymentMethodsResponse: paymentMethodsResponse,// The `/paymentMethods` response from the server.

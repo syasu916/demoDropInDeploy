@@ -45,7 +45,7 @@ async function getClientKey(url = '') {
 * @param Data : passes the stat.data to the backend
 */
 async function initPayment(paymentMethod) {
-  let response = await fetch('http://localhost:3002/api/makePayment', {
+  let response = await fetch('api/makePayment', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',
