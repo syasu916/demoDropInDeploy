@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropin Assignment</title>
+    <!--Style sheet for modal popup-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://checkoutshopper-test.adyen.com/checkoutshopper/sdk/4.5.0/adyen.css"
+    
+integrity=""
+crossorigin="anonymous">
+
+</head>
+<body>
+    <!--Adyen Drop in -->
+    <div id="dropin-container"></div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--payment resultCode from /paymemts -->
+            <div id="paymentResultMessage">
+                <!--refusal Reason for non authorized cards-->
+                <div id="paymentResultRefusalReason"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <script src="https://checkoutshopper-test.adyen.com/checkoutshopper/sdk/4.5.0/adyen.js"
+integrity=""
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="networkCalls.js"></script>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="modal.js"></script>   
+</body>
+<script>
+//Initiate an instance of AdyenCheckout to render the Dropin <div id="dropin-container">
+initCheckout();
+</script>
+</html>
